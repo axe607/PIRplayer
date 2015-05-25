@@ -1,2 +1,2 @@
 # PIRplayer
-PIR-141
+WPF player
