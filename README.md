@@ -1,2 +1,3 @@
 # PIRplayer
-Test v1.0.2
+Test v1.1
++ClassDiagram
