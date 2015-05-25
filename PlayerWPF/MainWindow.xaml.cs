@@ -22,6 +22,7 @@ namespace PlayerWPF
         private int stream;
         private double bassLevel = 0;
         private double miniBassLevel = 0;
+        private double maxLevel = 0;
         private double rotateRatio = 0.2;
         private bool _animationFlag = true;
         private bool _keyPausePlay = false;
@@ -33,11 +34,10 @@ namespace PlayerWPF
         private string FullPathToFile;
         private DispatcherTimer AnimationTimer;
         private AlbumTag albumTag;
+        private DateTime dataTime = new DateTime();
+        private TimeSpan Time = new TimeSpan(0, 0, 0);
         private Microsoft.Win32.OpenFileDialog File_open;
         #endregion
-
-        #region Initializers
-
 
         public MainWindow()
         {
@@ -45,8 +45,8 @@ namespace PlayerWPF
             animator = new ShapeAnimations()
             { _shape_Down = Shape_Down, _shape_Left = Shape_Left, _shape_Right = Shape_Right, _shape_Up = Shape_Up };
         }
-        
-        private void Bass_Initialize()
+
+        public void Bass_Initialize()
         {
             Bass.BASS_Stop();
             Bass.BASS_Free();
@@ -60,25 +60,14 @@ namespace PlayerWPF
 
         }
 
-        private void AnimationTimerInitialize()
+        public void AnimationTimerInitialize()
         {
             AnimationTimer = new DispatcherTimer();
             AnimationTimer.Tick += new EventHandler(AnimationTimer_Tick);
             AnimationTimer.Interval = TimeSpan.FromMilliseconds(10);
 
         }
-        #endregion
 
-        public bool isRightFileName(string name)
-        {
-            if (name != "")
-            { return true; }
-            else { return false; }
-            
-
-        }
-
-        
         private void image_folder_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             _folderFlag = true;
@@ -92,9 +81,11 @@ namespace PlayerWPF
             File_open.ShowDialog();
 
 
-            if(isRightFileName(File_open.SafeFileName)==true)
+            try
+            {
 
-            { 
+                wmp.Source = new Uri(File_open.FileName);
+
                 try { AnimationTimer.Stop(); }
                 catch (System.NullReferenceException)
                 { }
@@ -110,8 +101,12 @@ namespace PlayerWPF
                 image_play.Source = new BitmapImage(new Uri("pack://application:,,,/res1/pause1.png"));
                 Bass_Initialize();
                 AnimationTimerInitialize();
+
+
             }
-            else
+
+
+            catch (UriFormatException)
             { MessageBox.Show("Не выбран аудиофайл", "ERROR"); }
 
         }
