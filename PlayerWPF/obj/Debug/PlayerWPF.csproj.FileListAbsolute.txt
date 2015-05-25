@@ -31,7 +31,6 @@ E:\Games\GitHub\PlayerWPF\bin\Debug\PlayerWPF.exe
 E:\Games\GitHub\PlayerWPF\bin\Debug\PlayerWPF.pdb
 E:\Games\GitHub\PlayerWPF\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
 E:\Games\GitHub\PlayerWPF\bin\Debug\Bass.Net.xml
-E:\Games\GitHub\PlayerWPF\obj\Debug\PlayerWPF.csprojResolveAssemblyReference.cache
 E:\Games\GitHub\PlayerWPF\obj\Debug\MainWindow.g.cs
 E:\Games\GitHub\PlayerWPF\obj\Debug\App.g.cs
 E:\Games\GitHub\PlayerWPF\obj\Debug\PlayerWPF_Content.g.cs
@@ -41,3 +40,4 @@ E:\Games\GitHub\PlayerWPF\obj\Debug\MainWindow.baml
 E:\Games\GitHub\PlayerWPF\obj\Debug\PlayerWPF.g.resources
 E:\Games\GitHub\PlayerWPF\obj\Debug\PlayerWPF.Properties.Resources.resources
 E:\Games\GitHub\PlayerWPF\obj\Debug\PlayerWPF.csproj.GenerateResource.Cache
+E:\Games\GitHub\PlayerWPF\obj\Debug\PlayerWPF.csprojResolveAssemblyReference.cache
