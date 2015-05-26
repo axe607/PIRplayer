@@ -1,2 +1,2 @@
-# PIRplayer v1.0.1
-PIR-141
+# PIRplayer
+BRU PIR-141 2015
