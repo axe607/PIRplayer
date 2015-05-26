@@ -1,3 +1,3 @@
 # PIRplayer
-BRU PIr-141
+BRU PIR-141
 2015
