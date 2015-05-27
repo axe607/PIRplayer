@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PlayerWPF.MainWindow">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAgEGJCCAhJIAAIjAAAAEAABAAAAgAAwCgBIIChQAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerWPF.Code.AlbumTag">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAgAAAAAAAAAEAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Code\AlbumTag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerWPF.Code.ImageAnimations">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Code\ImageAnimations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerWPF.Code.ShapeAnimations">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAACABAAAAAAEDAAAAAABAgA=</HashCode>
+      <FileName>Code\ShapeAnimations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerWPF.Code.UserAnimation">
+    <Position X="0.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAgAAAEAAAAAAAAEAA=</HashCode>
+      <FileName>Code\UserAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
