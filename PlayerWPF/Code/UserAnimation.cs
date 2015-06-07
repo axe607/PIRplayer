@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
 
@@ -66,19 +63,19 @@ namespace PlayerWPF.Code
 
         }
 
-        protected static void AnimateImage(Image image,int _X,int _Y,int _time,bool reverse)
+        protected static void AnimateImage(Image image,int X,int Y,int _time,bool reverse)
         {
             int time = _time;
 
             DoubleAnimation da1 = new DoubleAnimation();
             da1.From = image.ActualHeight;
-            da1.To = image.ActualHeight + _Y;
+            da1.To = image.ActualHeight + Y;
             da1.Duration = TimeSpan.FromMilliseconds(time);
             da1.AutoReverse = reverse;
 
             DoubleAnimation da2 = new DoubleAnimation();
             da2.From = image.ActualWidth;
-            da2.To = image.ActualWidth + _X;
+            da2.To = image.ActualWidth + X;
             da2.Duration = TimeSpan.FromMilliseconds(time);
             da2.AutoReverse = reverse;
 

@@ -4,11 +4,11 @@ namespace PlayerWPF.Code
 {
     class ImageAnimations:UserAnimation
     {
-        public static void SimpleAnimation(Image _image,int _X, int _Y, int timeInMilliseconds, bool reverse)
+        public static void SimpleImageAnimation(Image _image,int X, int Y, int timeInMilliseconds, bool reverse)
         {
-            UserAnimation.AnimateImage(_image, _X, _Y, timeInMilliseconds, reverse);
+            UserAnimation.AnimateImage(_image, X, Y, timeInMilliseconds, reverse);
         }
-        public static void SimpleAnimationToStandart(Image image, double standartW, double standartH, int _time)
+        public static void SimpleImageAnimationToStandart(Image image, double standartW, double standartH, int _time)
         {
             UserAnimation.AnimateImageToStandart(image, standartW, standartH, _time);
         }

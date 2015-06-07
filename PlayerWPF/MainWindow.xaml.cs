@@ -195,10 +195,10 @@ namespace PlayerWPF
             switch (_animationFlag)
             {
                 case true:
-                    animator.Scale_Animation(bassLevel, miniBassLevel);
+                    animator.Scale_Animation( miniBassLevel);
                     break;
                 case false:
-                    animator.Round_Animation(bassLevel, miniBassLevel);
+                    animator.Round_Animation( miniBassLevel);
                     break;
             }
         }

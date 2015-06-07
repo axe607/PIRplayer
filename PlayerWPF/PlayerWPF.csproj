@@ -69,12 +69,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'for 32-bit|AnyCPU'">
-    <OutputPath>bin\for 32-bit\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'for 32-bit|x86'">
-    <OutputPath>bin\x86\for 32-bit\</OutputPath>
-  </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
     <Reference Include="Bass.Net, Version=2.4.11.0, Culture=neutral, PublicKeyToken=b7566c273e6ef480, processorArchitecture=MSIL" />

@@ -3,7 +3,7 @@ using System.Windows.Controls;
 
 namespace PlayerWPF.Code
 {
-    class ShapeAnimations: UserAnimation
+     class ShapeAnimations: UserAnimation
     {
         private  int r_flag = 0;
         private  int z_flag = 0;
@@ -17,7 +17,7 @@ namespace PlayerWPF.Code
         public ShapeAnimations()
         { }
 
-        public  void  Round_Animation(double bassLevel, double miniBassLevel)
+        public  void  Round_Animation(double miniBassLevel)
         {
             switch (r_flag)
             {
@@ -42,9 +42,9 @@ namespace PlayerWPF.Code
             if (r_flag > 28) { r_flag = 0; }
         }
 
-        public  void Scale_Animation(double bassLevel, double miniBassLevel)
+        public  void Scale_Animation( double miniBassLevel)
         {
-            if (z_flag % 16 == 0)
+            if (z_flag % 14 == 0)
             {
                 if (Flag == true)
                 {
@@ -58,7 +58,7 @@ namespace PlayerWPF.Code
                 }
                 else if (Flag == false)
                 {
-                    if (Math.Abs(miniBassLevel) >= 20)
+                    if (Math.Abs(miniBassLevel) >= 20 && Math.Abs(miniBassLevel) < 41)
                     {
                         UserAnimation.AnimateShape(_shape_Left, miniBassLevel);
                         UserAnimation.AnimateShape(_shape_Right, miniBassLevel);
@@ -83,6 +83,7 @@ namespace PlayerWPF.Code
 
             }
 
+            if(z_flag==70) { z_flag = 0; }
             z_flag += 2;
         }
     }
