@@ -42,3 +42,8 @@ E:\Games\GitHub\PlayerWPF\obj\x86\Release\MainWindow.baml
 E:\Games\GitHub\PlayerWPF\obj\x86\Release\PlayerWPF.g.resources
 E:\Games\GitHub\PlayerWPF\obj\x86\Release\PlayerWPF.Properties.Resources.resources
 E:\Games\GitHub\PlayerWPF\obj\x86\Release\PlayerWPF.csproj.GenerateResource.Cache
+E:\GitHub\PlayerWPF\bin\x86\Release\PlayerWPF.exe.config
+E:\GitHub\PlayerWPF\obj\x86\Release\Interop.QuartzTypeLib.dll
+E:\GitHub\PlayerWPF\obj\x86\Release\PlayerWPF.csproj.ResolveComReference.cache
+E:\GitHub\PlayerWPF\obj\x86\Release\PlayerWPF.exe
+E:\GitHub\PlayerWPF\obj\x86\Release\PlayerWPF.pdb
